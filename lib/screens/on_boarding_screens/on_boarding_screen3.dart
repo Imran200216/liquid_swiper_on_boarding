@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:liquid_swiper_on_boarding/components/custom_title_subtitle_text.dart';
-import 'package:liquid_swiper_on_boarding/constants/colors.dart';
 
 class OnBoardingScreen3 extends StatelessWidget {
   const OnBoardingScreen3({super.key});
@@ -30,43 +29,13 @@ class OnBoardingScreen3 extends StatelessWidget {
               fit: BoxFit.fitWidth,
             ),
           ),
-          Column(
-            children: [
-              const Expanded(
-                child: SizedBox(),
-              ),
-              const Spacer(),
-              const CustomTitleSubtitleText(
-                title: "Discover New Places",
-                description:
-                    "Explore vibrant cities, charming towns, and hidden gems. Experience diverse cultures, taste unique flavors, and make unforgettable memories. Adventure or relaxation, each destination offers a new story, waiting for you to uncover.",
-              ),
-              Container(
-                margin: const EdgeInsets.only(
-                  top: 5,
-                  left: 24,
-                  right: 24,
-                  bottom: 20,
-                ),
-                height: 50,
-                width: double.infinity,
-                decoration: BoxDecoration(
-                  color: AppColors.primaryColor,
-                  shape: BoxShape.rectangle,
-                  borderRadius: BorderRadius.circular(12),
-                ),
-                child: const Center(
-                  child: Text(
-                    "Get Started",
-                    style: TextStyle(
-                      fontWeight: FontWeight.w800,
-                      color: AppColors.secondaryColor,
-                      fontSize: 16,
-                    ),
-                  ),
-                ),
-              ),
-            ],
+          CustomTitleSubtitleText(
+            onTap: () {},
+            buttonText: "Get Started",
+            showButton: true,
+            title: "Discover New Places",
+            description:
+                "Explore vibrant cities, charming towns, and hidden gems. Experience diverse cultures, taste unique flavors, and make unforgettable memories. Adventure or relaxation, each destination offers a new story, waiting for you to uncover.",
           ),
         ],
       ),
