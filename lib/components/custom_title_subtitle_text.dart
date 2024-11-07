@@ -22,6 +22,7 @@ class CustomTitleSubtitleText extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
+              textAlign: TextAlign.start,
               title,
               style: const TextStyle(
                 fontSize: 24,
